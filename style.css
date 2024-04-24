@@ -1,0 +1,210 @@
+/* Hello this is my styleSheet */
+:root {
+    --primary-color: lightcoral;
+}
+nav {
+    background-color: #f8f8f8;
+    border-bottom: 3px solid rgb(0, 0, 0); 
+    border-top: 3px solid rgb(0, 0, 0);
+    border-left: 3px solid rgb(0, 0, 0);
+    border-right: 3px solid rgb(0, 0, 0);
+    border-width: 1px;
+    position: sticky;
+    overflow: hidden;
+}
+
+* h5 {
+    text-align: center;
+}
+
+input[type="text"] {
+    border: 1px solid red;
+}
+
+main {
+    /**/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10% 0 10%; 
+}
+
+.todo {
+    padding-top: 1cm;
+    max-width: 5cm;
+    min-width: 5cm;
+    width: 5cm;
+    height: 9cm;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1cm;
+    margin-right: 3cm;
+    margin-left: 1.5cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    background-color: aquamarine;
+    
+    border: 1px solid pink;
+    border-radius: 4%;
+}
+
+.todo section {
+    text-align: center;
+}
+
+.todo summary {
+    background-color: aquamarine;
+}
+
+.attendance {
+    width: 5cm;
+    margin: 1cm 1cm 1cm 1cm;
+    display: inline-block;
+    background-color: lightpink;
+}
+
+.attendance h2 {
+    background-color: rgb(255, 134, 193);
+    width: 5cm;
+    color: white;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0 px;
+    text-align: center;
+}
+
+fieldset,p {
+    color: red;
+}
+
+fieldset > label {
+    color: green;
+}
+
+fieldset ~ p {
+    color: orange;
+}
+
+fieldset + legend {
+    font-size: 10 px;
+    color: burlywood;
+}
+
+fieldset.label {
+    color: purple;
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px; 
+    justify-content: center; 
+}
+
+.grid .attendance {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 5px; 
+}
+
+.media {
+    flex-direction: column;
+    padding: 0 10mm 0 0mm;
+}
+
+.media h3 {
+    margin-bottom: 0;
+}
+
+header h1 {
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+    margin-bottom: 0;
+    color: var(--primary-color, lightcoral);
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    padding-top: 10%;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main section:has(video) h3 {
+    color: green;
+}
+
+header {
+    background-color: lightcoral; 
+    padding: 2vw;
+}
+
+head sub {
+    padding: 0 0 0 0;
+    top: 0;
+}
+
+header p {
+    text-align: left;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #333; 
+    text-align: center;
+    padding: 1.5em 1em; 
+    text-decoration: none;
+    font-size: 14px; /* Font size */
+    font-weight: 500; /* Font weight */
+    letter-spacing: 0.5px; /* Letter spacing */
+}
+
+
+nav li.active a {
+    color: rgb(0, 112, 201); /* Blue text color for active link (RGB) */
+}
+
+
+nav li a:hover {
+    background-color: hsl(0, 0%, 90%);
+    padding: 1.8rem 1.2rem;
+    border: 1px;
+    border-color:rgb(128, 226, 138);
+    border-style: inset; 
+    transition: background-color 0.3s ease;
+}
+
+
+body {
+    color: color(srgb 0 0 0 / 0.7);
+}
+
+
+.header-text {
+    color: color-mix(screen 0.7, red, blue); 
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    main {
+        flex-direction: column; /* Change flex direction */
+    }
+}
+
+/* Fonts */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Google font Roboto */
+}
+

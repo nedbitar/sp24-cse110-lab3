@@ -2,95 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple HTML Template</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <hr>
+
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
         </ul>
     </nav>
-    <hr>
+
 
     <header>
-        <h1>ECE 140: Minimal Viable Product First Meeting</h1>
+        <h1 style="color: white; ">ECE 140: Minimal Viable Product First Meeting</h1>
         <sub>Meeting Date: <span id="meeting_date">13th of April 2024</span></sub>
-        <br>
         <p>Meeting your group members.</p>
     </header>
    
     <main>
-        <section>
-            <h2>Attendance List</h2>
-            <ol>
-                <li><b>Joe</b></li>
-                <li><strong>Obama</strong></li>
-                <li><i>Trump</i></li>
-            </ol>
-        </section>
+        <div class="attendance">
+            <section>
+                <h2>Attendance List</h2>
+                <ol>
+                    <li><b>Joe</b></li>
+                    <li><strong>Obama</strong></li>
+                    <li><i>Trump</i></li>
+                </ol>
+            </section>
+        </div>
 
-        <section>
-            <details>
-                <summary>Agenda</summary>
-                <p>This is the first meeting of the quarter where you will meet your group members. You will need to come up with an MVP idea for you to work on the rest of the quarter, and then you will need to make a video showcasing as such.</p>
-            </details>
-        </section>
+        <div class = "todo">
+            <section>
+                <details>
+                    <summary>Agenda</summary>
+                    <p>This is the first meeting of the quarter where you will meet your group members. You will need to come up with an MVP idea for you to work on the rest of the quarter, and then you will need to make a video showcasing as such.</p>
+                </details>
+            </section>
 
-        <section>
-            <h3>Unfinished Tasks:</h3>
-            <ul>
-                <li>Creation of the GitHub Repo</li>
-                <li>Creation of the Slack Channel</li>
-            </ul>
-        </section>
-
-        <h3>Video:</h3>
-        <video width="320" height="240" controls>
-            <source src="video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <br>
-        <h3>Audio:</h3>
-        <audio controls>
-            <source src="strongman.mp3" type="audio/ogg">
-            Your browser does not support the audio tag.
-          </audio>
-
-
-        <section>
-            <form>
-                <fieldset>
-                    <legend>Complaint Details</legend>
-                    <p>Complaint Type:</p>
-                    <input type="checkbox" id="issueType1" name="issueType" value="Admin">
-                    <label for="issueType1"> Administrative</label><br>
-                    <p>Gender:</p>
-                    <input type="radio" id="genderMale" name="gender" value="male">
-                    <label for="genderMale"> Male</label><br>
+            <section>
+                <h3>Unfinished Tasks:</h3>
+                <ul>
+                    <li>Creation of the GitHub Repo</li>
+                    <li>Creation of the Slack Channel</li>
+                </ul>
+            </section>
+        </div>
         
-                    <input type="radio" id="genderFemale" name="gender" value="female">
-                    <label for="genderFemale"> Female</label><br>
+        <div class="grid">
+            <div class="media">
+                <h3>Video:</h3>
+                <video width="320" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            
+                <h3>Audio:</h3>
+                <audio controls>
+                    <source src="strongman.mp3" type="audio/ogg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Complaint Details</legend>
+                        <p>Complaint Type:</p>
+                        <input type="checkbox" id="issueType1" name="issueType" value="Admin">
+                        <label for="issueType1"> Administrative</label><br>
+                        <p>Gender:</p>
+                        <input type="radio" id="genderMale" name="gender" value="male">
+                        <label for="genderMale"> Male</label><br>
+            
+                        <input type="radio" id="genderFemale" name="gender" value="female">
+                        <label for="genderFemale"> Female</label><br>
+                        <br>
+                        <label for="name">First Name:</label><br>
+                        <textarea id="name" name="name"></textarea><br>
+                        <br>
+                        <label for="dateOfBirth">Date of Birth:</label><br>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
+                        <br>
+                        <label for="complaint">Complaint:</label><br>
+                        <input type="text" id="complaint" name="complaint" list="browsers"><br>
+                        <datalist id="browsers">
+                            <option value="Bad Group Member">
+                            <option value="Does not Compile">
+                        </datalist><br>
+                        <button type="submit">Submit</button>
+                    </fieldset>
                     <br>
-                    <label for="name">First Name:</label><br>
-                    <textarea id="name" name="name"></textarea><br>
-                    <br>
-                    <label for="dateOfBirth">Date of Birth:</label><br>
-                    <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
-                    <br>
-                    <label for="complaint">Complaint:</label><br>
-                    <input type="text" id="complaint" name="complaint" list="browsers"><br>
-                    <datalist id="browsers">
-                        <option value="Bad Group Member">
-                        <option value="Does not Compile">
-                    </datalist><br>
-                    <button type="submit">Submit</button>
-                </fieldset>
-                <br>
-               
-            </form>
-        </section>
+                
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer>
